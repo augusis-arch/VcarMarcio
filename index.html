@@ -8,6 +8,65 @@
   <link rel="preconnect" href="https://gstatic.com" crossorigin />
   <link href="https://googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
+
+.perfil-container {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente a foto com o texto */
+  gap: 24px;           /* Espaço entre a foto e o texto */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.perfil-foto {
+  width: 150px;
+  max-width: 35%;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.perfil-info {
+  text-align: left;    /* Garante o texto alinhado à esquerda */
+}
+
+.perfil-info h1 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.perfil-info .role {
+  margin-top: 0;
+  margin-bottom: 12px;
+  line-height: 1.2;    /* Entrelinha menor para "Co-President..." */
+  font-weight: bold;
+  color: #555;
+}
+
+.perfil-info .bio {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 600px) {
+  .perfil-container {
+    flex-direction: column;
+    align-items: flex-start; /* Alinha a foto e o bloco de texto à esquerda no celular */
+    gap: 16px;
+  }
+
+  .perfil-foto {
+    width: 120px;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
     :root {
       --bg: #0f172a;
       --card: #1e293b;
@@ -156,11 +215,10 @@
 </head>
 <body>
   <main class="card">
-    <img
-      class="avatar"
-      src="https://placeholder.com"
-      alt="Profile photo of Marcio Demelo"
-    />
+    <div class="perfil-container">
+  <img src="MarcioFotoDiamante.png" alt="Foto Marcio Diamante" class="perfil-foto">
+  
+  <div class="perfil-info">
     <h1>Marcio Demelo</h1>
     <p class="role">
       Co-President &amp; Mortgage Loan Originator<br />
@@ -169,6 +227,9 @@
     <p class="bio">
       A short description of what you do, how you help clients, or your business focus.
     </p>
+  </div>
+</div>
+
 
     <div class="links">
       <!-- 1. Phone (opens dialer) -->
