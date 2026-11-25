@@ -28,12 +28,6 @@
   flex-shrink: 0;
 }
 
-.perfil-foto2 {
-  width: 20%;       /* Faz a imagem ocupar exatamente metade do espaço disponível */
-  height: auto;     /* Mantém a proporção original da imagem sem distorcer */
-  object-fit: contain;
-  align: center;
-}
 
 .perfil-info {
   text-align: left;
