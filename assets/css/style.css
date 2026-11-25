@@ -13,16 +13,26 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  max-width: 440px;      /* Deixa o bloco compacto igual à segunda imagem */
+  width: 100%;            /* Faz ocupar toda a largura disponível em telas menores */
+  max-width: 540px;       /* Trava a largura máxima em 540px em telas maiores */
+  box-sizing: border-box; /* Faz o padding de 16px não ultrapassar os 100% da tela */
   margin: 0 auto;
   padding: 16px;
   font-family: 'Source Sans 3', sans-serif !important;
 }
 
+
 .perfil-foto {
-  width: 135px;
+  width: 100%;
   height: auto;
   flex-shrink: 0;
+}
+
+.perfil-foto2 {
+  width: 20%;       /* Faz a imagem ocupar exatamente metade do espaço disponível */
+  height: auto;     /* Mantém a proporção original da imagem sem distorcer */
+  object-fit: contain;
+  align: center;
 }
 
 .perfil-info {
