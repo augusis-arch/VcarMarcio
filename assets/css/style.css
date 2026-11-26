@@ -37,7 +37,7 @@
 
 .texto-imagem {
   max-width: 85%; /* Garante que não encoste nas bordas nem no ícone */
-  max-height: 45px; /* Mantém a altura do botão padronizada */
+ /* max-height: 45px;  Mantém a altura do botão padronizada */
   width: auto;
   height: auto;
   object-fit: contain;
