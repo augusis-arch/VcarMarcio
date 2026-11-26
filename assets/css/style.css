@@ -28,6 +28,21 @@
   flex-shrink: 0;
 }
 
+.item-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.texto-imagem {
+  max-width: 85%; /* Garante que não encoste nas bordas nem no ícone */
+  max-height: 45px; /* Mantém a altura do botão padronizada */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 
 .perfil-info {
   text-align: left;
