@@ -1,3 +1,17 @@
+/* Importa a fonte Source Sans Pro (atualizada como Source Sans 3 no Google Fonts) */
+@import url('https://googleapis.com');
+
+.texto-instrucao {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Source Sans Pro', 'Source Sans 3', sans-serif;
+  font-size: 16px;      /* Você pode ajustar o tamanho aqui se quiser maior ou menor */
+  line-height: 1.5;     /* Dá um respiro agradável entre a linha em inglês e a em português */
+  margin: 16px 0;       /* Espaçamento em cima e embaixo da div */
+}
+
+
+
 .footer-texto {
   font-family: 'Source Sans 3', sans-serif;
   color: #ffffff;
@@ -168,7 +182,7 @@ body,html{
     margin-left:6px
 }
 .py-10{
-    padding:10px
+    padding:5px
 }
 .ln-h-22{
     line-height:22px
@@ -255,7 +269,8 @@ body,html{
     text-transform: none;
     border-radius: 8px;
     
-    min-height: 60px;
+     min-height: 85px;     /* Aumenta a altura total do botão */
+    padding: 8px 16px;    /* Deixa uma margem interna pequena para a imagem respirar */
 }
 
 .page-item-wrap {
