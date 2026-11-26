@@ -36,8 +36,8 @@
 }
 
 .texto-imagem {
-  max-width: 85%; /* Garante que não encoste nas bordas nem no ícone */
- /* max-height: 45px;  Mantém a altura do botão padronizada */
+  max-width: 100%; /* Garante que não encoste nas bordas nem no ícone */
+  max-height: 45px; /* Mantém a altura do botão padronizada */
   width: auto;
   height: auto;
   object-fit: contain;
@@ -259,7 +259,7 @@ body,html{
 }
 
 .page-item-wrap {
-    margin: 16px 0;
+    margin: 10px 0;
 }
 
 .page-item-wrap:last-child {
